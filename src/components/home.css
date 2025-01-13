@@ -1,0 +1,61 @@
+.section{
+    margin-top: 15rem;
+}
+.nav-link {
+    color: #fff;
+    transition: all 0.2s ease;
+}
+.nav-link-hover:hover {
+    color: #ff0077;
+    border-bottom: 1px solid #ff0077;
+}
+.text-pres{
+    color: #fff;
+    text-align: center;
+}
+
+h1, h2, h3, h4, p {
+    margin: 1rem;
+    color: #fff;
+}
+.btn-rosa-pri{
+    background-color: #ff0077;
+    color: #fff;
+    border: #ff0077;
+}
+.btn-rosa-sec{
+    background-color: #171718;
+    color: #fff;
+    border-color: #ff0077 !important;
+}
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre botones */
+    margin-top: 20px;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: #db6fa1;
+    color: #fff;
+}
+.card-color{
+    background-color: #1F1F21;
+    border: 1px solid #40434A;
+    text-align: left;
+}
+
+.text-pri{
+    color: #ff0077;
+}
+
