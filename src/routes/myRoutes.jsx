@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
-const Hola = lazy(() => import("../components/Home")); // Ruta al componente Hola
+const Home = lazy(() => import("../components/Home")); // Ruta al componente Hola
 
 const MyRoutes = () => {
     return (
@@ -12,7 +12,7 @@ const MyRoutes = () => {
                     <Route path="/" element={<Navigate to="/index" />} />
                     
                     {/* Ruta para /index que carga el componente Hola */}
-                    <Route path="/index" element={<Hola />} />
+                    <Route path="/index" element={<Home />} />
                 </Routes>
             </Suspense>
         </Router>

@@ -1,5 +1,5 @@
 // src/App.jsx
-import MyRoutes from "./routes/myRoutes";
+import MyRoutes from './routes/MyRoutes';
 
 const App = () => {
     return (

@@ -1,4 +1,4 @@
-import './home.css'
+import './home.css';
 import Presentacion from './presentacion';
 import AboutMe from './aboutMe';
 import HardSkils from './hardSkils';
@@ -6,65 +6,46 @@ import Proyects from './proyects';
 import Footer from './footer';
 
 export default function Home() {
-    return (
-      <div>
-        <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#000", color: "#fff" }}>
-          <div className="container-fluid">
-            {/* Logo */}
-            <a className="navbar-brand" href="#" style={{ color: "#fff", fontWeight: "bold" }}>Juli</a>
-            {/* Botón responsive */}
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarText"
-              aria-controls="navbarText"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarText">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item m-1">
-                  <a className="nav-link nav-link-hover text-white" href="#">
-                    Inicio
-                  </a>
-                </li>
-                <li className="nav-item m-1">
-                  <a className="nav-link nav-link-hover text-white" href="#">
-                    Acerca de mí
-                  </a>
-                </li>
-                <li className="nav-item m-1">
-                  <a className="nav-link nav-link-hover text-white" href="#">
-                    Proyectos
-                  </a>
-                </li>
-              </ul>
-              <a
-                className="btn"
-                href="#"
-                style={{
-                  backgroundColor: "#ff0077",
-                  color: "#fff",
-                  fontWeight: "bold",
-                  borderRadius: "20px",
-                }}
-              >
-                Contáctame
-              </a>
-            </div>
-          </div>
-        </nav>
+  return (
+    <div>
+      <nav className="navbar nav-link">
+        <div className="container d-flex justify-content-between align-items-center ">
+          <a className="navbar-brand fw-bold text-white" href="#">Juli</a>
+          <ul className="navbar-nav d-flex flex-row">
+            <li className="nav-item mx-2">
+              <a className="nav-link text-white nav-link-hover" href="#">Inicio</a>
+            </li>
+            <li className="nav-item mx-2">
+              <a className="nav-link text-white nav-link-hover" href="#">Acerca de mí</a>
+            </li>
+            <li className="nav-item mx-2">
+              <a className="nav-link text-white nav-link-hover" href="#">Proyectos</a>
+            </li>
+          </ul>
+          <a className="btn btn-rosa-pri rounded-pill" href="#"> Contáctame </a>
+        </div>
+      </nav>
 
-        <img src="../src/img/banner1.png" className="img-fluid" alt="banner"></img>
-        <Presentacion/>
-        <AboutMe/>
-        <HardSkils/>
-        <Proyects/>
-        <Footer/>
+      {/* Banner */}
+      <div className="container-fluid p-0">
+        <img
+          src="../src/img/banner1.png"
+          className="img-fluid w-100"
+          alt="banner"
+          style={{ maxHeight: "500px", objectFit: "cover" }}
+        />
       </div>
-    );
-  }
-  
+
+      {/* Secciones */}
+      <div className="container mt-5">
+        <Presentacion />
+        <AboutMe />
+        <HardSkils />
+        <Proyects />
+      </div>
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
+}

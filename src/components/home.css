@@ -3,7 +3,10 @@
 }
 .nav-link {
     color: #fff;
+    background-color: #171718;
     transition: all 0.2s ease;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 .nav-link-hover:hover {
     color: #ff0077;
