@@ -1,6 +1,9 @@
 .section{
     margin-top: 15rem;
 }
+.section-down{
+    margin-bottom: 15rem;
+}
 .nav-link {
     color: #fff;
     background-color: #171718;
@@ -60,5 +63,11 @@ h1, h2, h3, h4, p {
 
 .text-pri{
     color: #ff0077;
+}
+
+.icon-pri{
+    color: #B86C9F;
+    font-size: 60px;
+    align-items: center;
 }
 

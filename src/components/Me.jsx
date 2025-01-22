@@ -1,4 +1,6 @@
-export default function AboutMe() {
+import { NavLink } from "react-router-dom";
+
+export default function Me() {
     return (
       <div className="section text-center d-flex justify-content-center align-items-center">
         <div className="card mb-3 card-color w-100" style={{ maxWidth: "1300px" }}>
@@ -14,15 +16,15 @@ export default function AboutMe() {
             <div className="col-12 col-md-8 p-0">
               <div className="card-body">
                 <h1 className="card-title my-4 text-pri">Acerca de mí</h1>
-                <p className="card-text">
+                <p className="card-text" style={{lineHeight: "1.58"}}>
                   Hola! Soy Técnica Universitaria en Programación, orientada al desarrollo de Software con un enfoque en el
                   desarrollo Front-End utilizando React, JS, HTML y Bootstrap. Por otro lado, para el diseño creativo utilizo
                   Figma. Estoy siempre dispuesta a adquirir nuevos conocimientos, tanto trabajando en equipo como de forma
                   autodidacta, lo que me ayuda a seguir aprendiendo y creciendo.
                 </p>
-                <button className="btn btn-rosa-sec">
+                <NavLink to={"/aboutme"} className="btn btn-rosa-sec">
                   Más Sobre Mí <i className="px-2 bi bi-arrow-right"></i>
-                </button>
+                </NavLink>
               </div>
             </div>
           </div>

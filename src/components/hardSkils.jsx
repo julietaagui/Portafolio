@@ -7,13 +7,10 @@ export default function HardSkils() {
           <div className="row">
             <div className="col-12 col-md-6 col-lg-4 mb-4">
               <div className="card card-color h-100">
-                <div className="card-body">
-                  <i
-                    className="bi bi-braces"
-                    style={{ fontSize: "60px", color: "#ff0077" }}
-                  ></i>
-                  <h1 className="card-title text-white mt-3">Desarrollo Frontend</h1>
-                  <p className="card-text">
+                <div className="card-body position-relative">
+                  <i className="bi bi-braces icon-pri position-absolute mx-3"></i>
+                  <h1 className="card-title text-white" style={{marginTop: "5rem"}}>Desarrollo Frontend</h1>
+                  <p className="card-text" style={{lineHeight: "1.8"}}>
                     Con mi experiencia en el desarrollo frontend, tengo una visión
                     clara de cómo crear interfaces intuitivas y atractivas
                     utilizando HTML5, JavaScript y Bootstrap para estructurar,
@@ -26,12 +23,9 @@ export default function HardSkils() {
             <div className="col-12 col-md-6 col-lg-4 mb-4">
               <div className="card card-color h-100">
                 <div className="card-body">
-                  <i
-                    className="bi bi-wrench"
-                    style={{ fontSize: "50px", color: "#ff0077" }}
-                  ></i>
-                  <h1 className="card-title text-white mt-3">Herramientas y Colaboración</h1>
-                  <p className="card-text">
+                  <i className="bi bi-wrench icon-pri mx-3"></i>
+                  <h1 className="card-title text-white">Herramientas y Colaboración</h1>
+                  <p className="card-text" style={{lineHeight: "1.8"}}>
                     Domino herramientas como Git y GitHub para el control de
                     versiones y colaboración en equipo. Además, tengo experiencia
                     con metodologías ágiles como Scrum, optimizando la entrega de
@@ -43,13 +37,10 @@ export default function HardSkils() {
   
             <div className="col-12 col-md-6 col-lg-4 mb-4">
               <div className="card card-color h-100">
-                <div className="card-body">
-                  <i
-                    className="bi bi-file-check"
-                    style={{ fontSize: "50px", color: "#ff0077" }}
-                  ></i>
-                  <h1 className="card-title text-white mt-3">Aprendizaje y Adaptabilidad</h1>
-                  <p className="card-text">
+                <div className="card-body ">
+                  <i className="bi bi-file-check icon-pri mx-3"></i>
+                  <h1 className="card-title text-white">Aprendizaje y Adaptabilidad</h1>
+                  <p className="card-text" style={{lineHeight: "1.8"}}>
                     Soy proactiva y flexible, siempre dispuesta a aprender y
                     adaptarme a nuevos desafíos, buscando mejorar continuamente y
                     aportar valor a los proyectos.
