@@ -1,11 +1,11 @@
 import './home.css';
-import Presentacion from './presentacion';
 import Me from './Me';
-import HardSkils from './hardSkils';
-import Proyects from './proyects';
-import Footer from './footer';
+import HardSkils from './HardSkils';
+import Proyects from './Proyects';
+import Footer from './Footer';
 import bannerImg from "../img/banner1.png";
 import Nav from './nav';
+import Introduce from './Introduce';
 export default function Home() {
   return (
     <div>
@@ -23,7 +23,7 @@ export default function Home() {
 
       {/* Secciones */}
       <div className="container mt-5">
-        <Presentacion />
+        <Introduce />
         <Me />
         <HardSkils />
         <Proyects />

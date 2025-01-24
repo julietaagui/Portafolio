@@ -17,8 +17,8 @@ const MyRoutes = () => {
                     <Route path="/" element={<Navigate to="/index" />} />
                     
                     <Route path="/index" element={<Home />} />
-                    <Route path="/aboutme" element={<AboutMe />} />
-                    <Route path="/Proyects" element={<Proyects />} />
+                    <Route path="/about-me" element={<AboutMe />} />
+                    <Route path="/proyects" element={<Proyects />} />
                 </Routes>
             </Suspense>
         </Router>

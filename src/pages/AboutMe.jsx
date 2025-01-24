@@ -1,6 +1,5 @@
+import '../components/home.css'
 import Nav from "../components/nav"
-import { Fragment } from 'react';
-import '../App.css'
 
 export default function AboutMe(){
 
@@ -8,13 +7,13 @@ export default function AboutMe(){
         {
             id: 1,
             name: 'JavaScript',
-            description: 'Tengo manejo de sistemas de diseño...',
+            description: 'Tengo manejo de sistemas de diseño, lo cual permite agilidad en el proceso de diseño acortando los tiempos en la creación de las interfaces dentro del proyecto.',
             icon: 'bi bi-code-slash',
         },
         {
             id: 2,
             name: 'React JS',
-            description: 'Trato de ser un activo valioso...',
+            description: 'Trato de ser un activo valioso en el equipo que esté trabajando, aportando mis conocimientos y material que optimice el flujo de trabajo en el desarrollo del proyecto.',
             icon: `
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -32,25 +31,25 @@ export default function AboutMe(){
         {
             id: 3,
             name: 'Bootstrap',
-            description: 'Con mi experiencia en patrones de diseño...',
+            description: 'Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto.',
             icon: 'bi bi-bootstrap',
         },
         {
             id: 4,
             name: 'HTML y CSS',
-            description: 'Tengo conocimientos básicos...',
+            description: 'Tengo conocimientos basicos y bien fundamentados de html y css, lo que me permite tener un panorama mas claro a la hora de tomar mis decisiones de diseño para los desarrolladores.',
             icon: 'bi bi-file-code',
         },
         {
             id: 5,
             name: 'Git',
-            description: 'Puedo mantener comunicación...',
+            description: 'Puedo mantener comunicación  con el equipo de desarrollo, atento a cualquier inquietud que se presente con el fin de llevar el proyecto de manera correcta.',
             icon: 'bi bi-git',
         },
         {
             id: 6,
             name: 'GitHub',
-            description: 'Soy capaz de iterar recibiendo feedback...',
+            description: 'Soy capaz de iterar recibiendo e interpretando el feedback que me sea proporcionado con el fin de mejorar la calidad del producto que esté diseñando.',
             icon: 'bi bi-github',
         },
     ];
@@ -60,31 +59,29 @@ export default function AboutMe(){
         <div>
             <Nav/>
             <div className="container section text-center">
-            <h1 className="my-5 text-pri">Acerca de mí</h1>
-
-              <div className="text-center d-flex justify-content-center align-items-center">
-                    <div className="row g-0">
-                        <div className="col-12 col-md-4">
-                            <img
-                                src="../src/img/juli.png"
-                                className="img-fluid rounded-start "
-                                alt="Acerca de mí"
-                                style={{ objectFit: "cover", width: "100%", }}
-                            />
-                        </div>
-                        <div className="col-12 col-md-8">
-                            <div className="container text-md-start">
-                                <h5 className="card-text text-white" style={{ lineHeight: "1.5" }}>
-                                Hola! Soy Técnica Universitaria en Programación,  orientada al desarrollo de Software con un enfoque en el desarrollo Front-End utilizando React, JS, HTML y Bootstrap, por otro lado para el diseño creativo utilizo Figma. Estoy siempre dispuesta a adquirir nuevos conocimientos, tanto trabajando en equipo como de forma autodidacta, lo que me ayuda a seguir aprendiendo y creciendo.
-                                Me gusta trabajar en equipo porque creo que es una excelente manera de aprender nuevas habilidades y aportar mis conocimientos para mejorar la productividad y calidad en el desarrollo de productos digitales.
-                                Mi objetivo es diseñar experiencias que no solo sean visualmente agradables, sino que también sean accesibles, funcionales y fáciles de usar. Para mí, el feedback es una herramienta clave que ayuda a perfeccionar cada detalle y asegura que el diseño cumpla con las expectativas de los usuarios.
-                                </h5>
+                <h1 className="my-5 text-pri">Acerca de mí</h1>
+                <div className="text-center d-flex justify-content-center align-items-center">
+                        <div className="row g-0 ">
+                            <div className="col-12 col-md-4">
+                                <img
+                                    src="../src/img/juli.png"
+                                    className="img-fluid rounded-start "
+                                    alt="Acerca de mí"
+                                    style={{ objectFit: "cover", width: "100%", }}
+                                />
+                            </div>
+                            <div className="col-12 col-md-8">
+                                <div className="container text-md-start">
+                                    <h5 className="card-text text-white" style={{ lineHeight: "1.6" }}>
+                                    Hola! Soy Técnica Universitaria en Programación,  orientada al desarrollo de Software con un enfoque en el desarrollo Front-End utilizando React, JS, HTML y Bootstrap, por otro lado para el diseño creativo utilizo Figma. <br/>Estoy siempre dispuesta a adquirir nuevos conocimientos, tanto trabajando en equipo como de forma autodidacta, lo que me ayuda a seguir aprendiendo y creciendo.<br/>
+                                    Me gusta trabajar en equipo porque creo que es una excelente manera de aprender nuevas habilidades y aportar mis conocimientos para mejorar la productividad y calidad en el desarrollo de productos digitales.<br/>
+                                    Mi objetivo es diseñar experiencias que no solo sean visualmente agradables, sino que también sean accesibles, funcionales y fáciles de usar.<br/> Para mí, el feedback es una herramienta clave que ayuda a perfeccionar cada detalle y asegura que el diseño cumpla con las expectativas de los usuarios.
+                                    </h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-        </div>
-            <Fragment>
+                 </div>
+            </div>
                 <div className="section text-center align-items-center">
                     <h1 className="my-5 text-pri">Mis Hard-Skills</h1>
                     <div className="container">
@@ -92,29 +89,122 @@ export default function AboutMe(){
                         {data.map((skil) => (
                         <div className="col-12 col-md-6 col-lg-4 mb-4" key={skil.id}>
                             <div className="card bg-dark text-light h-100">
-                                <div className="card-body">
-                                {skil.icon.includes('<svg') ? (
-                                <div
-                                    className="icon-style "
-                                    aria-label={`Ícono de ${skil.name}`}
-                                    dangerouslySetInnerHTML={{ __html: skil.icon }}
-                                ></div>
-                                ) : (
-                                <i className={`icon-style  ${skil.icon}`} aria-label={`Ícono de ${skil.name}`}></i>
-                                )}
-                                    <h3 className="card-title mt-3">{skil.name}</h3>
-                                    <p className="card-text">{skil.description}</p>
+                                <div className="card-body d-flex flex-column align-items-start">
+                                    <div className="d-flex justify-content-start align-items-center mb-3">
+                                        {skil.icon.includes('<svg') ? (
+                                            <div
+                                            className="icon-style d-flex justify-content-center align-items-center p-3"
+                                            aria-label={`Ícono de ${skil.name}`}
+                                            dangerouslySetInnerHTML={{ __html: skil.icon }}
+                                            ></div>
+                                        ) : (
+                                            <i
+                                            className={`icon-style rounded d-flex justify-content-center align-items-center p-3 ${skil.icon}`}
+                                            aria-label={`Ícono de ${skil.name}`}
+                                            ></i>
+                                        )}
+                                    </div>
+                                    <h3 className="card-title">{skil.name}</h3>
+                                    <div className="container">
+                                        <h5 className="text-start" style={{ lineHeight: "1.6" }}>{skil.description}</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        ))}
-
-
+                        ))};
                         </div>
                     </div>
                 </div>
-            </Fragment>
+            <div className="container section text-center  mb-5">
+                <h1 className="my-5 text-pri">Software de diseño que manejo</h1>
+                <div className="container card card-color mt-5" style={{width: "26rem"}}>
+                    <div className="card-body mt-5 position-relative">
+                        <svg
+                            className="icon-figma position-absolute start-50 translate-middle"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            height="1.1em"
+                        >
+                        <g
+                            fill="none"
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="1.5"
+                        >
+                            <path d="M6 6a3 3 0 0 1 3-3h3v6H9a3 3 0 0 1-3-3m6-3h3a3 3 0 0 1 0 6h-3z"></path>
+                            <path d="M12 12a3 3 0 1 1 6 0a3 3 0 0 1-6 0m-6 6a3 3 0 0 1 3-3h3v3a3 3 0 0 1-6 0m0-6a3 3 0 0 1 3-3h3v6H9a3 3 0 0 1-3-3"></path>
+                        </g>
+                        </svg>
+                    </div>
+                    <div className="mt-3">
+                        <h1 className="text-pri text-center ">Figma</h1>
+                        <h5 className="text-center text-white" style={{lineHeight: "1.8"}}>
+                            Figma, es una de mis herramientas de diseño preferidas.
+                        </h5>
+                    </div>
+                    <div className='container text-center'>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='svg' viewBox="0 0 300 60">
+                            <defs>
+                                <linearGradient id="grad">
+                                    <stop offset="100%" stopColor="#A4036F" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                fill="url(#grad)"
+                                d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                l11.547-1.2L16.026,0.6L20.388,10.918z"
+                                transform="translate(10, 10) scale(0.8)"
+                            />
+                            <path
+                                fill="url(#grad)"
+                                d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                l11.547-1.2L16.026,0.6L20.388,10.918z"
+                                transform="translate(50, 10) scale(0.8)"
+                            />
+                            <path
+                                fill="url(#grad)"
+                                d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                l11.547-1.2L16.026,0.6L20.388,10.918z"
+                                transform="translate(90, 10) scale(0.8)"
+                            />
+                            <path
+                                fill="#1F1F21"
+                                stroke="#A4036F"
+                                strokeWidth="2"
+                                d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                l11.547-1.2L16.026,0.6L20.388,10.918z"
+                                transform="translate(130, 10) scale(0.8)"
+                            />
+                            <path
+                                fill="#1F1F21"
+                                stroke="#A4036F"
+                                strokeWidth="2"
+                                d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                l11.547-1.2L16.026,0.6L20.388,10.918z"
+                                transform="translate(170, 10) scale(0.8)"
+                            />
+                            <path
+                                fill="#1F1F21"
+                                stroke="#A4036F"
+                                strokeWidth="2"
+                                d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                l11.547-1.2L16.026,0.6L20.388,10.918z"
+                                transform="translate(210, 10) scale(0.8)"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
-    )
-    
+        
+    ) 
 } 
+
+
+
+
+      
+   
+  

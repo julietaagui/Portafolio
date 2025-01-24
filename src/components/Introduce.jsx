@@ -1,6 +1,6 @@
 import './home.css'
 
-export default function Presentacion(){
+export default function Introduce(){
 
     return(
 

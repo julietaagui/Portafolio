@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 export default function Proyects(){
 
@@ -37,7 +38,9 @@ export default function Proyects(){
             </div>
             
             <div className="buttons-container">
-                <button className="btn btn-rosa-pri m-5">Ver mas de mis Proyectos<i className="px-2 bi bi-arrow-right"></i></button>
+                <NavLink to={'/proyects'} className="btn btn-rosa-pri m-5">
+                    Ver mas de mis Proyectos<i className="px-2 bi bi-arrow-right"></i>
+                </NavLink>
             </div>
         </div>
     )

@@ -12,27 +12,27 @@
     margin-top: 8px;
 }
 .nav-link-hover:hover {
-    color: #ff0077;
-    border-bottom: 1px solid #ff0077;
+    color: #A4036F;
+    border-bottom: 1px solid #A4036F;
+    /*#ff0077*/
 }
 .text-pres{
     color: #fff;
     text-align: center;
 }
-
 h1, h2, h3, h4, p {
     margin: 1rem;
     color: #fff;
 }
 .btn-rosa-pri{
-    background-color: #ff0077;
-    color: #fff;
-    border: #ff0077;
+    background-color: #A4036F;
+    color:#fff;
+    border:#A4036F;
 }
 .btn-rosa-sec{
     background-color: #171718;
     color: #fff;
-    border-color: #ff0077 !important;
+    border-color:  #A4036F !important;
 }
 .buttons-container {
     display: flex;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, p {
     transition: all 0.3s ease;
 }
 .btn:hover{
-    background-color: #db6fa1;
+    background-color: #A4036F;
     color: #fff;
 }
 .card-color{
@@ -60,14 +60,40 @@ h1, h2, h3, h4, p {
     border: 1px solid #40434A;
     text-align: left;
 }
-
 .text-pri{
-    color: #ff0077;
+    color: #A4036F;
 }
-
 .icon-pri{
     color: #B86C9F;
     font-size: 60px;
     align-items: center;
 }
-
+body{
+    background-color: #171718 !important;
+}
+.icon-style {
+    display: inline-block; /* Asegura alineación */
+    color: #B86C9F;
+    font-size: 60px;
+    position: relative;
+}
+.card-color{
+    background-color: #1F1F21;
+    border: 1px solid #40434A;
+    text-align: left;
+}
+.icon-figma{
+    font-size: 70px;
+    background-color: #B86C9F;
+    color: #ffffff;
+    border-radius: 1rem;
+}
+.stars{
+    font-size: 30px;
+    color: #A4036F;
+}
+.svg{
+    width: 300px;
+    height: 60px;
+    margin-left: 3rem;
+}

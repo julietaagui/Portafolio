@@ -15,12 +15,12 @@ export default function Nav(){
                           </NavLink>
                         </li>
                         <li className="nav-item mx-2">
-                          <NavLink to="/aboutme" className="nav-link text-white nav-link-hover">
+                          <NavLink to="/about-me" className="nav-link text-white nav-link-hover">
                             Acerca de mí
                           </NavLink>
                         </li>
                         <li className="nav-item mx-2">
-                          <NavLink to="/Proyects" className="nav-link text-white nav-link-hover">
+                          <NavLink to="/proyects" className="nav-link text-white nav-link-hover">
                             Proyectos
                           </NavLink>
                         </li>

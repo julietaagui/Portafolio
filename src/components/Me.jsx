@@ -22,7 +22,7 @@ export default function Me() {
                   Figma. Estoy siempre dispuesta a adquirir nuevos conocimientos, tanto trabajando en equipo como de forma
                   autodidacta, lo que me ayuda a seguir aprendiendo y creciendo.
                 </p>
-                <NavLink to={"/aboutme"} className="btn btn-rosa-sec">
+                <NavLink to={"/about-me"} className="btn btn-rosa-sec mx-3" style={{width: '200px', height: '45px'}}>
                   Más Sobre Mí <i className="px-2 bi bi-arrow-right"></i>
                 </NavLink>
               </div>
