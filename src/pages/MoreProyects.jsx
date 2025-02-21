@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
+import Nav from "../components/Nav";
 
-export default function Proyects(){
+export default function MoreProyects(){
+
     const data = [
         {
             id: 1,
@@ -19,12 +21,26 @@ export default function Proyects(){
             name: "Plantitas",
             img: '../src/img/proyect3.png',
             description: 'Este proyecto se desarrollo con las tecnologias React y Bootstrap, se trata de un Ecommerce que a su vez  integra secciones de blogs interactivos.'
+        },
+        {
+            id: 4,
+            name: "Finanzas Flex",
+            img: '../src/img/proyect4.png',
+            description: 'Este proyecto cuenta con un frontend y un backend. Mi participación se centró en el desarrollo del frontend, utilizando React y Bootstrap.'
+        },
+        {
+            id: 5,
+            name: "GymCross",
+            img: '../src/img/proyect5.png',
+            description: 'Este proyecto es la versión móvil del sistema admin GymCross.Esta hecho con figma y en proceso para desarrollarlo con React Native.'
         }
     ]
 
     return(
+        
         <div>
-            <div className="section text-center align-items-center ">
+            <Nav/>
+            <div className="mt-6 text-center align-items-center">
                 <h1 className="my-5 text-pri">Algunos de mis proyectos</h1>
                     <div className="container">
                         <div className="row">

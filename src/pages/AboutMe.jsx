@@ -1,5 +1,6 @@
+import Footer from '../components/Footer';
 import '../components/home.css'
-import Nav from "../components/nav"
+import Nav from "../components/Nav"
 
 export default function AboutMe(){
 
@@ -58,21 +59,21 @@ export default function AboutMe(){
     return(
         <div>
             <Nav/>
-            <div className="container section text-center">
+            <div className="container mt-6 text-center">
                 <h1 className="my-5 text-pri">Acerca de mí</h1>
                 <div className="text-center d-flex justify-content-center align-items-center">
-                        <div className="row g-0 ">
+                        <div className="row g-0">
                             <div className="col-12 col-md-4">
                                 <img
                                     src="../src/img/juli.png"
-                                    className="img-fluid rounded-start "
+                                    className="img-fluid"
                                     alt="Acerca de mí"
-                                    style={{ objectFit: "cover", width: "100%", }}
+                                    style={{ objectFit: "cover", height: "100%", borderRadius: "1rem"}}
                                 />
                             </div>
                             <div className="col-12 col-md-8">
                                 <div className="container text-md-start">
-                                    <h5 className="card-text text-white" style={{ lineHeight: "1.6" }}>
+                                    <h5 className="card-text text-white" style={{ lineHeight: "1.6", marginLeft: "5.5rem" }}>
                                     Hola! Soy Técnica Universitaria en Programación,  orientada al desarrollo de Software con un enfoque en el desarrollo Front-End utilizando React, JS, HTML y Bootstrap, por otro lado para el diseño creativo utilizo Figma. <br/>Estoy siempre dispuesta a adquirir nuevos conocimientos, tanto trabajando en equipo como de forma autodidacta, lo que me ayuda a seguir aprendiendo y creciendo.<br/>
                                     Me gusta trabajar en equipo porque creo que es una excelente manera de aprender nuevas habilidades y aportar mis conocimientos para mejorar la productividad y calidad en el desarrollo de productos digitales.<br/>
                                     Mi objetivo es diseñar experiencias que no solo sean visualmente agradables, sino que también sean accesibles, funcionales y fáciles de usar.<br/> Para mí, el feedback es una herramienta clave que ayuda a perfeccionar cada detalle y asegura que el diseño cumpla con las expectativas de los usuarios.
@@ -82,43 +83,43 @@ export default function AboutMe(){
                         </div>
                  </div>
             </div>
-                <div className="section text-center align-items-center">
+                <section className="section text-center align-items-center">
                     <h1 className="my-5 text-pri">Mis Hard-Skills</h1>
                     <div className="container">
                         <div className="row">
-                        {data.map((skil) => (
-                        <div className="col-12 col-md-6 col-lg-4 mb-4" key={skil.id}>
-                            <div className="card bg-dark text-light h-100">
-                                <div className="card-body d-flex flex-column align-items-start">
-                                    <div className="d-flex justify-content-start align-items-center mb-3">
-                                        {skil.icon.includes('<svg') ? (
-                                            <div
-                                            className="icon-style d-flex justify-content-center align-items-center p-3"
-                                            aria-label={`Ícono de ${skil.name}`}
-                                            dangerouslySetInnerHTML={{ __html: skil.icon }}
-                                            ></div>
-                                        ) : (
-                                            <i
-                                            className={`icon-style rounded d-flex justify-content-center align-items-center p-3 ${skil.icon}`}
-                                            aria-label={`Ícono de ${skil.name}`}
-                                            ></i>
-                                        )}
-                                    </div>
-                                    <h3 className="card-title">{skil.name}</h3>
-                                    <div className="container">
-                                        <h5 className="text-start" style={{ lineHeight: "1.6" }}>{skil.description}</h5>
+                            {data.map((skil) => (
+                            <div className="col-12 col-md-6 col-lg-4 mb-3" key={skil.id}>
+                                <div className="card card-color text-light h-100 border-card">
+                                    <div className="card-body d-flex flex-column">
+                                        <div className="d-flex align-items-center gap-3 mb-3">
+                                            {skil.icon.includes('<svg') ? (
+                                                <div
+                                                    className="icon-style d-flex justify-content-center align-items-center p-3"
+                                                    aria-label={`Ícono de ${skil.name}`}
+                                                    dangerouslySetInnerHTML={{ __html: skil.icon }}
+                                                ></div>
+                                            ) : (
+                                                <i
+                                                    className={`icon-style rounded d-flex justify-content-center align-items-center p-3 ${skil.icon}`}
+                                                    aria-label={`Ícono de ${skil.name}`}
+                                                ></i>
+                                            )}
+                                        </div>
+                                        <h3 className="card-title mb-0">{skil.name}</h3>
+                                        <p className="card-text mt-3 mb-3" style={{ lineHeight: "1.6" }}>
+                                            {skil.description}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        ))};
+                            ))}
                         </div>
                     </div>
-                </div>
-            <div className="container section text-center  mb-5">
+                </section>
+            <section className="container section text-center  mb-5">
                 <h1 className="my-5 text-pri">Software de diseño que manejo</h1>
-                <div className="container card card-color mt-5" style={{width: "26rem"}}>
-                    <div className="card-body mt-5 position-relative">
+                <div className="container card card-color mt-5 border-card" style={{width: "26rem"}}>
+                    <div className="card-body mt-5 position-relative mb-4">
                         <svg
                             className="icon-figma position-absolute start-50 translate-middle"
                             xmlns="http://www.w3.org/2000/svg"
@@ -139,10 +140,10 @@ export default function AboutMe(){
                         </svg>
                     </div>
                     <div className="mt-3">
-                        <h1 className="text-pri text-center ">Figma</h1>
-                        <h5 className="text-center text-white" style={{lineHeight: "1.8"}}>
+                        <h3 className="text-pri text-center">Figma</h3>
+                        <h6 className="text-center text-white" style={{lineHeight: "1.8"}}>
                             Figma, es una de mis herramientas de diseño preferidas.
-                        </h5>
+                        </h6>
                     </div>
                     <div className='container text-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='svg' viewBox="0 0 300 60">
@@ -196,9 +197,62 @@ export default function AboutMe(){
                         </svg>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section className="section text-center align-items-center" style={{marginBottom: "15rem"}}>
+                <div className="container">
+                <h1 className="my-5 text-pri">Experiencia de trabajo y educación</h1>
+                    <div className="row">
+                        <div className="col-12 col-md-6 col-lg-4 mb-4">
+                            <div className="d-flex justify-content-start align-items-center mb-3 p-3">
+                                <div className="container card card-color mt-5 border-card" style={{width: "26rem"}}>
+                                    <div className="card-body mt-5 position-relative mb-4">
+                                        <i className="bi bi-code-slash icon-large"></i>
+                                    </div>
+                                    <div className="mt-3">
+                                        <h3 className="text-white text-center ">UTN</h3>
+                                        <h6 className="text-center text-white mb-5" style={{lineHeight: "1.8"}}>
+                                            Estudié la Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional, donde adquirí conocimientos en desarrollo con Python, Java y JavaScript.
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg-4 mb-4">
+                            <div className="d-flex justify-content-start align-items-center mb-3 p-3">
+                                <div className="container card card-color mt-5" style={{width: "26rem"}}>
+                                    <div className="card-body mt-5 position-relative mb-4">
+                                        <i className="bi bi-code-slash icon-large"></i>
+                                    </div>
+                                    <div className="mt-3">
+                                        <h3 className="text-white text-center ">No Country</h3>
+                                        <h6 className="text-center text-white mb-5" style={{lineHeight: "1.8"}}>
+                                            Trabajé en equipo en una simulación laboral desarrollando un proyecto frontend con React y Bootstrap, colaborando en la implementación de interfaces dinámicas y funcionales.
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg-4 mb-4">
+                            <div className="d-flex justify-content-start align-items-center mb-3 p-3">
+                                <div className="container card card-color mt-5" style={{width: "26rem"}}>
+                                    <div className="card-body mt-5 position-relative mb-4">
+                                        <i className="bi bi-code-slash icon-large"></i>
+                                    </div>
+                                    <div className="mt-3">
+                                        <h3 className="text-white text-center ">Freelancer</h3>
+                                        <h6 className="text-center text-white mb-5" style={{lineHeight: "1.8"}}>
+                                             Me desempeño como freelancer en el diseño y desarrollo de páginas web, combinando creatividad y funcionalidad para ofrecer soluciones atractivas y eficientes.
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <Footer/>
         </div>
-        
     ) 
 } 
 

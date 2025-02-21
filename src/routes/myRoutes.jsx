@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-d
 
 const Home = lazy(() => import("../components/Home")); 
 const AboutMe = lazy(() => import("../pages/AboutMe"));
-const Proyects = lazy(() => import("../pages/Proyects"))
+const Proyects = lazy(() => import("../pages/MoreProyects"))
 
 
 const MyRoutes = () => {

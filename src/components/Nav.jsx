@@ -1,14 +1,15 @@
 import { NavLink } from "react-router-dom"
+import './home.css';
 
 export default function Nav(){
 
     return(
 
         <div>
-            <nav className="navbar nav-link">
-                    <div className="container d-flex justify-content-between align-items-center ">
+            <nav className="navbar nav-color">
+                    <div className="container d-flex justify-content-between align-items-center">
                       <a className="navbar-brand fw-bold text-white" href="/">Juli</a>
-                      <ul className="navbar-nav d-flex flex-row">
+                      <ul className="navbar-nav d-flex flex-row marg-l">
                         <li className="nav-item mx-2">
                           <NavLink to="/" className="nav-link text-white nav-link-hover">
                             Inicio
@@ -20,12 +21,19 @@ export default function Nav(){
                           </NavLink>
                         </li>
                         <li className="nav-item mx-2">
-                          <NavLink to="/proyects" className="nav-link text-white nav-link-hover">
+                          <NavLink to="/more-proyects" className="nav-link text-white nav-link-hover">
                             Proyectos
                           </NavLink>
                         </li>
                       </ul>
-                      <a className="btn btn-rosa-pri rounded-pill" href="#"> Contáctame </a>
+                      <div className="d-flex">
+                          <button className='btn btn-rosa-pri mx-2'>GitHub</button>
+                          <button className='btn btn-rosa-pri'>
+                            <a href=""><i className="bi bi-arrow-down" style={{color: "white"}}></i></a>
+                              Descargar CV
+                          </button>
+                      </div>
+                      
                     </div>
                   </nav>
         </div>

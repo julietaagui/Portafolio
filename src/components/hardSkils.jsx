@@ -1,63 +1,42 @@
+
 export default function HardSkils() {
+  const data = [
+    {
+      id: 1,
+      name: "Desarrollo Frontend",
+      icon: "bi bi-braces icon-pri mx-3",
+      description: "Con mi experiencia en el desarrollo frontend, tengo una vision clara de cómo crear interfaces intuitivas y atractivas utilizando HTML5, JavaScript y Bootstrap para estructurar, estilizar y dar funcionalidad a las aplicaciones."
+    },
+    {
+      id: 2,
+      name: "Herramientas y Colaboración",
+      icon: "bi bi-wrench icon-pri mx-3",
+      description: "Domino herramientas como Git y GitHub para el control de versiones y colaboración en equipo. Además, tengo experiencia con metodologías ágiles como Scrum, optimizando la entrega de proyectos."
+    },
+    {
+      id: 3,
+      name: "Aprendizaje y Adaptabilidad",
+      icon: "bi bi-file-check icon-pri mx-3",
+      description: "Soy proactiva y flexible, siempre dispuesta a aprender y adaptarme a nuevos desafíos, buscando mejorar continuamente y aportar valor a los proyectos."
+    }
+  ]
     return (
       <div className="section text-center align-items-center">
         <h1 className="my-5 text-pri">Mis Hard-Skills</h1>
-  
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6 col-lg-4 mb-4">
-              <div className="card card-color h-100">
-                <div className="card-body position-relative">
-                  <i className="bi bi-braces icon-pri position-absolute mx-3"></i>
-                  <h1 className="card-title text-white" style={{marginTop: "5rem"}}>Desarrollo Frontend</h1>
-                  <p className="card-text" style={{lineHeight: "1.8"}}>
-                    Con mi experiencia en el desarrollo frontend, tengo una visión
-                    clara de cómo crear interfaces intuitivas y atractivas
-                    utilizando HTML5, JavaScript y Bootstrap para estructurar,
-                    estilizar y dar funcionalidad a las aplicaciones.
-                  </p>
+            {data.map((skill) => (
+              <div className="col-12 col-md-6 col-lg-4 mb-3" key={skill.id}>
+              <div className="card card-color text-light h-100 shadow-card border-card">
+                <div className="card-body position-relative mb-3">
+                  <i className={skill.icon}></i>
+                  <h3 className="card-title  mb-0" style={{marginTop: "2rem"}}>{skill.name}</h3>
+                  <p className="card-text mt-3" style={{lineHeight: "1.6"}}>{skill.description}</p>
                 </div>
               </div>
             </div>
-  
-            <div className="col-12 col-md-6 col-lg-4 mb-4">
-              <div className="card card-color h-100">
-                <div className="card-body">
-                  <i className="bi bi-wrench icon-pri mx-3"></i>
-                  <h1 className="card-title text-white">Herramientas y Colaboración</h1>
-                  <p className="card-text" style={{lineHeight: "1.8"}}>
-                    Domino herramientas como Git y GitHub para el control de
-                    versiones y colaboración en equipo. Además, tengo experiencia
-                    con metodologías ágiles como Scrum, optimizando la entrega de
-                    proyectos.
-                  </p>
-                </div>
-              </div>
-            </div>
-  
-            <div className="col-12 col-md-6 col-lg-4 mb-4">
-              <div className="card card-color h-100">
-                <div className="card-body ">
-                  <i className="bi bi-file-check icon-pri mx-3"></i>
-                  <h1 className="card-title text-white">Aprendizaje y Adaptabilidad</h1>
-                  <p className="card-text" style={{lineHeight: "1.8"}}>
-                    Soy proactiva y flexible, siempre dispuesta a aprender y
-                    adaptarme a nuevos desafíos, buscando mejorar continuamente y
-                    aportar valor a los proyectos.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
-        </div>
-  
-        <div className="position-relative">
-            <div className="position-absolute top-0 start-50 translate-middle mt-5">
-                <button className="btn btn-rosa-pri">
-                    Ver más de mis Skills<i className="px-2 bi bi-arrow-right"></i>
-                </button>
-            </div>
-          
         </div>
       </div>
     );
