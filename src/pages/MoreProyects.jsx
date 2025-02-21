@@ -62,11 +62,7 @@ export default function MoreProyects(){
                             
                         </div>
                     </div>
-                <div className="buttons-container">
-                    <NavLink to={"/more-proyects"} className="btn btn-rosa-pri m-5">
-                        Ver mas de mis Proyectos<i className="px-2 bi bi-arrow-right"></i>
-                    </NavLink>
-                </div>
+                
             </div>
         </div>
         
