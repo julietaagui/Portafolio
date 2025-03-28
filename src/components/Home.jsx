@@ -4,7 +4,6 @@ import Proyects from './proyects';
 import Nav from './Nav';
 import Introduce from './Introduce';
 import HeadSkills from './HeadSkills';
-import Footer from './Footer';
 
 export default function Home() {
   return (
@@ -17,8 +16,6 @@ export default function Home() {
         <HeadSkills/>
         <Proyects />
       </div>
-
-      <Footer/>
     </div>
   );
 }

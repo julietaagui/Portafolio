@@ -5,6 +5,7 @@ import Proyects from "./components/proyects";
 import './components/home.css'
 import MoreProyects from "./pages/MoreProyects";
 import MoreSkills from "./pages/MoreSkills";
+import Footer from "./components/Footer";
 
 export default function App() {
     return (
@@ -21,6 +22,7 @@ export default function App() {
                     </Routes>
                 </Router>
             </div>
+            <Footer/>
         </div>
     );
 }
