@@ -5,7 +5,7 @@ import Proyects from "./components/proyects";
 import './components/home.css'
 import MoreProyects from "./pages/MoreProyects";
 import MoreSkills from "./pages/MoreSkills";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 
 export default function App() {
     return (

@@ -1,4 +1,3 @@
-import Footer from '../components/Footer';
 import '../components/home.css'
 import Nav from "../components/Nav"
 
@@ -251,7 +250,6 @@ export default function AboutMe(){
                     </div>
                 </div>
             </section>
-            <Footer/>
         </div>
     ) 
 } 

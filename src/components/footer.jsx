@@ -1,9 +1,5 @@
-
-
 export default function Footer(){
-
     return(
-    
         <div>
             <footer className="shadow-pink footer-color">
                 <section className="pt-1">
