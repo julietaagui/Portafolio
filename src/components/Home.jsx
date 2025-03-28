@@ -1,6 +1,6 @@
 import './home.css';
 import Me from './Me';
-import HardSkils from './HardSkils';
+import HardSkils from './HardSkils'
 import Proyects from './proyects';
 import Footer from './Footer';
 import Nav from './Nav';
@@ -14,7 +14,7 @@ export default function Home() {
       <div className="container mt-5">
         
         <Me />
-        <HardSkils />
+        <HardSkils/>
         <Proyects />
       </div>
 
