@@ -64,7 +64,7 @@ export default function AboutMe(){
                         <div className="row g-0">
                             <div className="col-12 col-md-4">
                                 <img
-                                    src="../src/img/juli.png"
+                                    src="/juli.jpg"
                                     className="img-fluid"
                                     alt="Acerca de mí"
                                     style={{ objectFit: "cover", height: "100%", borderRadius: "1rem"}}

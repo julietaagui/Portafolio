@@ -7,7 +7,7 @@ export default function Me() {
           <div className="row g-0">
             <div className="col-12 col-md-4 p-0 ">
             <img
-                src="../src/img/juli.png"
+                src="/juli.jpg"
                 className="img-fluid img-rounded-left"
                 alt="Acerca de mí"
                 style={{ objectFit: "cover", height: "100%" }}
