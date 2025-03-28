@@ -1,10 +1,10 @@
 import './home.css';
 import Me from './Me';
-import HardSkils from './HardSkils'
 import Proyects from './proyects';
 import Footer from './Footer';
 import Nav from './Nav';
 import Introduce from './Introduce';
+import HeadSkills from './HeadSkills';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <div className="container mt-5">
         
         <Me />
-        <HardSkils/>
+        <HeadSkills/>
         <Proyects />
       </div>
 

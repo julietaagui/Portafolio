@@ -1,5 +1,5 @@
 
-export default function HardSkils() {
+export default function HeadSkills() {
   const data = [
     {
       id: 1,
