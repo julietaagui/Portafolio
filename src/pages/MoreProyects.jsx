@@ -6,31 +6,31 @@ export default function MoreProyects(){
         {
             id: 1,
             name: "Bloom",
-            img: '../src/img/proyect1.jpg',
+            img: '/proyect1.jpg',
             description: 'Este proyecto esta elaborado con figma, se trata de un proyecto ecommerce sobre Botellas Térmicas con una experiencia de usuario intuitiva.'
         },
         {
             id: 2,
             name: "GymCross Admin",
-            img: '../src/img/proyect2.jpg',
+            img: '/proyect2.jpg',
             description: 'Este es un proyecto diseñado con Figma y se trata de una plataforma admin para el manejo de Gimnasios, convina diseño atractivo y funcionalidad. '
         },
         {
             id: 3,
             name: "Plantitas",
-            img: '../src/img/proyect3.jpg',
+            img: '/proyect3.jpg',
             description: 'Este proyecto se desarrollo con las tecnologias React y Bootstrap, se trata de un Ecommerce que a su vez  integra secciones de blogs interactivos.'
         },
         {
             id: 4,
             name: "Finanzas Flex",
-            img: '../src/img/proyect4.jpg',
+            img: '/proyect4.jpg',
             description: 'Este proyecto cuenta con un frontend y un backend. Mi participación se centró en el desarrollo del frontend, utilizando React y Bootstrap.'
         },
         {
             id: 5,
             name: "GymCross",
-            img: '../src/img/proyect5.jpg',
+            img: '/proyect5.jpg',
             description: 'Este proyecto es la versión móvil del sistema admin GymCross.Esta hecho con figma y en proceso para desarrollarlo con React Native.'
         }
     ]
