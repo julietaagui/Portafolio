@@ -251,7 +251,7 @@ export default function AboutMe(){
                     </div>
                 </div>
             </section>
-        <Footer/>
+            <Footer/>
         </div>
     ) 
 } 

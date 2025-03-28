@@ -1,10 +1,10 @@
 import './home.css';
 import Me from './Me';
 import Proyects from './proyects';
-import Footer from './Footer';
 import Nav from './Nav';
 import Introduce from './Introduce';
 import HeadSkills from './HeadSkills';
+import Footer from './Footer';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <Proyects />
       </div>
 
-      <Footer />
+      <Footer/>
     </div>
   );
 }
