@@ -1,7 +1,7 @@
 import './home.css';
 import Me from './Me';
 import HardSkils from './HardSkils';
-import Proyects from './Proyects';
+import Proyects from './proyects';
 import Footer from './Footer';
 import Nav from './Nav';
 import Introduce from './Introduce';
