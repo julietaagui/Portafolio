@@ -1,5 +1,5 @@
 body{
-    background-color: #171718 !important;
+    background-color: #202020 !important;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -9,29 +9,33 @@ body{
     margin-top: 8rem;
 }
 .section{
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 .section-down{
     margin-bottom: 15rem;
 }
 .nav-color{
-    background-color: #131414 !important;
+    background-color: #202020 !important;
+}
+.portafolio {
+    color: #eda2b9 !important;
 }
 .nav-link {
-    color: #fff;
-    background-color: #131414;
+    color: #eda2b9 !important;
     transition: all 0.2s ease;
     margin-bottom: 8px;
     margin-top: 8px;
 }
 .nav-link-hover:hover {
     color: #eda2b9 !important;
-    border-bottom: 1px solid #eda2b9 !important;
-    /*#ff0077*/
+    border-bottom: 2px solid #eda2b9 !important;
 }
 .text-pres{
     color: #fff;
     text-align: center;
+}
+h4{
+    color: #eda2b9 !important;
 }
 h1, h2, h3, h4, p {
     margin: 1rem;
@@ -45,13 +49,21 @@ h1, h2, h3, h4, p {
     border-bottom-left-radius: 1rem !important;
 }
 .btn-rosa-pri{
-    background-color: #171718 !important; 
-    color:#ffffff !important;
+    background-color: #202020 !important; 
+    color:#eda2b9 !important;
     border-color:#eda2b9 !important;
 }
-.btn-rosa-sec{
-    background-color: #171718 !important;
-    color: #fff !important;
+.btn-rosa-pri:hover{
+    background-color: #eda2b9 !important;
+    color: #ffffff !important;
+}
+.btn-rosa-sec {
+    border-color: #eda2b9;
+    color: #eda2b9 !important;
+}
+.btn-rosa-sec:hover {
+    background-color: #eda2b9 !important;
+    color: #202020 !important;
 }
 .buttons-container {
     display: flex;
@@ -70,12 +82,9 @@ h1, h2, h3, h4, p {
     text-decoration: none !important;
     transition: all 0.3s ease !important;
 }
-.btn:hover{
-    background-color: #eda2b9 !important;
-    color: #000000 !important;
-}
+
 .card-color{
-    background-color: #1F1F21 !important;
+    background-color: #202020 !important;
     border: 1px solid #40434A !important;
     text-align: left !important;
 }
@@ -94,7 +103,7 @@ h1, h2, h3, h4, p {
     position: relative;
 }
 .card-color{
-    background-color: #1F1F21;
+    background-color: #202020;
     border: 1px solid #40434A;
     text-align: left;
 }
@@ -128,14 +137,14 @@ h1, h2, h3, h4, p {
     box-shadow: 0 3px 15px #eda2b9; 
 }
 .shadow-XL{
-    box-shadow: 0 3px 200px #eda2b9; 
+    box-shadow: 0 3px 100px #eda2b9; 
     background-color: transparent;
 }
 .footer-color{
-    background-color: #131414;
+    background-color: #202020;
+    border-color: #eda2b9 !important;
 }
 .rotulo {
-    background-color: #eda2b9; 
     color: white;
     padding: 50px; 
     text-align: center; 
@@ -144,10 +153,17 @@ h1, h2, h3, h4, p {
     width: 100%; 
 }
 .card-m{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 .marg-l{
     margin-left: 16rem;
+}
+.none {
+    text-decoration: none;
+}
+.bottom-x {
+    margin-top: 6rem ;
+    margin-bottom: 6rem;
 }

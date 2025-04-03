@@ -90,22 +90,22 @@ export default function AboutMe(){
                             <div className="col-12 col-md-6 col-lg-4 mb-3" key={skil.id}>
                                 <div className="card card-color text-light h-100 border-card">
                                     <div className="card-body d-flex flex-column">
-                                        <div className="d-flex align-items-center gap-3 mb-3">
+                                        <div className="d-flex align-items-center">
                                             {skil.icon.includes('<svg') ? (
                                                 <div
-                                                    className="icon-style d-flex justify-content-center align-items-center p-3"
+                                                    className="icon-style d-flex justify-content-center align-items-center p-2"
                                                     aria-label={`Ícono de ${skil.name}`}
                                                     dangerouslySetInnerHTML={{ __html: skil.icon }}
                                                 ></div>
                                             ) : (
                                                 <i
-                                                    className={`icon-style rounded d-flex justify-content-center align-items-center p-3 ${skil.icon}`}
+                                                    className={`icon-style rounded d-flex justify-content-center align-items-center p-2 ${skil.icon}`}
                                                     aria-label={`Ícono de ${skil.name}`}
                                                 ></i>
                                             )}
                                         </div>
-                                        <h3 className="card-title mb-0">{skil.name}</h3>
-                                        <p className="card-text mt-3 mb-3" style={{ lineHeight: "1.6" }}>
+                                        <h3 className="card-title">{skil.name}</h3>
+                                        <p className="card-text" style={{ lineHeight: "1.6" }}>
                                             {skil.description}
                                         </p>
                                     </div>
@@ -148,7 +148,7 @@ export default function AboutMe(){
                         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='svg' viewBox="0 0 300 60">
                             <defs>
                                 <linearGradient id="grad">
-                                    <stop offset="100%" stopColor="#A4036F" />
+                                    <stop offset="100%" stopColor="#eda2b9" />
                                 </linearGradient>
                             </defs>
                             <path
@@ -171,7 +171,7 @@ export default function AboutMe(){
                             />
                             <path
                                 fill="#1F1F21"
-                                stroke="#A4036F"
+                                stroke="#eda2b9"
                                 strokeWidth="2"
                                 d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
                                 l11.547-1.2L16.026,0.6L20.388,10.918z"
@@ -179,7 +179,7 @@ export default function AboutMe(){
                             />
                             <path
                                 fill="#1F1F21"
-                                stroke="#A4036F"
+                                stroke="#eda2b9"
                                 strokeWidth="2"
                                 d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
                                 l11.547-1.2L16.026,0.6L20.388,10.918z"
@@ -187,7 +187,7 @@ export default function AboutMe(){
                             />
                             <path
                                 fill="#1F1F21"
-                                stroke="#A4036F"
+                                stroke="#eda2b9"
                                 strokeWidth="2"
                                 d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
                                 l11.547-1.2L16.026,0.6L20.388,10.918z"

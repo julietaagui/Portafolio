@@ -27,7 +27,7 @@ export default function HeadSkills() {
           <div className="row">
             {data.map((skill) => (
               <div className="col-12 col-md-6 col-lg-4 mb-3" key={skill.id}>
-              <div className="card card-color text-light h-100 shadow-card border-card">
+              <div className="card card-color text-light h-100 border-card">
                 <div className="card-body position-relative mb-3">
                   <i className={skill.icon}></i>
                   <h3 className="card-title  mb-0" style={{marginTop: "2rem"}}>{skill.name}</h3>

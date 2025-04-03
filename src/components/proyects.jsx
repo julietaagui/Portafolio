@@ -24,14 +24,14 @@ export default function Proyects(){
 
     return(
         <div>
-            <div className="section text-center align-items-center ">
+            <div className="section text-center align-items-center">
                 <h1 className="my-5 text-pri">Algunos de mis proyectos</h1>
                     <div className="container">
                         <div className="row">
                             {data.map((proyect) => (
                                 <div className="col-12 col-md-6 col-lg-4 mb-3" key={proyect.id}>
-                                    <div className="card card-color text-light h-100 border-card">
-                                        <div className="card-body position-relative m-3" >
+                                    <div className="card card-color text-light h-100 border-card container d-flex flex-column">
+                                        <div className="card position-relative m-2 mt-4" >
                                             <img src={proyect.img} alt={proyect.name} className="img-fluid rounded" style={{marginTop: "0.5rem"}}/>
                                         </div>
                                         <div className="card-m">
@@ -42,8 +42,7 @@ export default function Proyects(){
                                         </div>
                                     </div>
                                 </div>
-                            ))}
-                            
+                            ))} 
                         </div>
                     </div>
                 <div className="buttons-container">
@@ -53,6 +52,5 @@ export default function Proyects(){
                 </div>
             </div>
         </div>
-        
     )
 }
