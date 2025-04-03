@@ -27,7 +27,6 @@ export default function Me() {
                   to={"/about-me"} 
                   className="btn btn-rosa-pri mx-3" 
                   style={{width: '200px'}}
-                  onClick={() => window.screen()}
                   >
                   Más Sobre Mí <i className="px-2 bi bi-arrow-right"></i>
                 </NavLink>
