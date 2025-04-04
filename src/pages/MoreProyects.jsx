@@ -57,7 +57,6 @@ export default function MoreProyects(){
         <div>
             <Nav/>
             <div className="text-center align-items-center bottom-x">
-                <h1 className="my-5 text-pri">Algunos de mis proyectos</h1>
                     <div className="container">
                         <div className="row">
                         {data.map((proyect) => (

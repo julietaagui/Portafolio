@@ -167,3 +167,8 @@ h1, h2, h3, h4, p {
     margin-top: 6rem ;
     margin-bottom: 6rem;
 }
+.burger{
+    color: #ffffff !important;
+    background-color: #eda2b9;
+}
+

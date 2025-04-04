@@ -25,7 +25,7 @@ export default function Proyects(){
     return(
         <div>
             <div className="section text-center align-items-center">
-                <h1 className="my-5 text-pri">Algunos de mis proyectos</h1>
+                <h1 className="my-5 text-pri">Mis proyectos</h1>
                     <div className="container">
                         <div className="row">
                             {data.map((proyect) => (

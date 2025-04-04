@@ -22,7 +22,7 @@ export default function HeadSkills() {
   ]
     return (
       <div className="section text-center align-items-center">
-        <h1 className="my-5 text-pri">Mis Hard-Skills</h1>
+        <h1 className="my-5 text-pri">Mis Skills</h1>
         <div className="container">
           <div className="row">
             {data.map((skill) => (
