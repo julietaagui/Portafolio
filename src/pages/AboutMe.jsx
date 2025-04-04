@@ -59,29 +59,36 @@ export default function AboutMe(){
         <div>
             <Nav/>
             <div className="container mt-6 text-center">
-                <h1 className="my-5 text-pri">Acerca de mí</h1>
-                <div className="text-center d-flex justify-content-center align-items-center">
-                        <div className="row g-0">
-                            <div className="col-12 col-md-4">
-                                <img
-                                    src="/juli.jpg"
-                                    className="img-fluid"
-                                    alt="Acerca de mí"
-                                    style={{ objectFit: "cover", height: "100%", borderRadius: "1rem"}}
-                                />
-                            </div>
-                            <div className="col-12 col-md-8">
-                                <div className="container text-md-start">
-                                    <h5 className="card-text text-white" style={{ lineHeight: "1.6", marginLeft: "5.5rem" }}>
-                                    Hola! Soy Técnica Universitaria en Programación,  orientada al desarrollo de Software con un enfoque en el desarrollo Front-End utilizando React, JS, HTML y Bootstrap, por otro lado para el diseño creativo utilizo Figma. <br/>Estoy siempre dispuesta a adquirir nuevos conocimientos, tanto trabajando en equipo como de forma autodidacta, lo que me ayuda a seguir aprendiendo y creciendo.<br/>
-                                    Me gusta trabajar en equipo porque creo que es una excelente manera de aprender nuevas habilidades y aportar mis conocimientos para mejorar la productividad y calidad en el desarrollo de productos digitales.<br/>
-                                    Mi objetivo es diseñar experiencias que no solo sean visualmente agradables, sino que también sean accesibles, funcionales y fáciles de usar.<br/> Para mí, el feedback es una herramienta clave que ayuda a perfeccionar cada detalle y asegura que el diseño cumpla con las expectativas de los usuarios.
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                 </div>
+    <h1 className="my-5 text-pri" style={{marginRight: "8rem"}}>Acerca de mí</h1>
+    <div className="text-center d-flex justify-content-center align-items-center">
+        <div className="row g-5 w-100">
+            
+            {/* Imagen - Se ajusta para mantener proporciones correctas */}
+            <div className="col-12 col-md-4 d-flex align-items-stretch">
+                <img
+                    src="/juli.jpg"
+                    className="img-fluid w-100"
+                    alt="Acerca de mí"
+                    style={{ objectFit: "cover", borderRadius: "1rem" }}
+                />
             </div>
+
+            {/* Texto - Se mantiene alineado correctamente */}
+            <div className="col-12 col-md-8 d-flex align-items-center">
+                <div className="container text-md-start p-3">
+                    <h5 className="card-text text-white" style={{ lineHeight: "1.6" }}>
+                        Hola! Soy Técnica Universitaria en Programación, orientada al desarrollo de Software con un enfoque en el desarrollo Front-End utilizando React, JS, HTML y Bootstrap, por otro lado para el diseño creativo utilizo Figma. <br/><br/>
+                        Estoy siempre dispuesta a adquirir nuevos conocimientos, tanto trabajando en equipo como de forma autodidacta, lo que me ayuda a seguir aprendiendo y creciendo.<br/><br/>
+                        Me gusta trabajar en equipo porque creo que es una excelente manera de aprender nuevas habilidades y aportar mis conocimientos para mejorar la productividad y calidad en el desarrollo de productos digitales.<br/><br/>
+                        Mi objetivo es diseñar experiencias que no solo sean visualmente agradables, sino que también sean accesibles, funcionales y fáciles de usar. Para mí, el feedback es una herramienta clave que ayuda a perfeccionar cada detalle y asegura que el diseño cumpla con las expectativas de los usuarios.
+                    </h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
                 <section className="section text-center align-items-center">
                     <h1 className="my-5 text-pri">Mis Hard Skills</h1>
                     <div className="container">
@@ -198,19 +205,19 @@ export default function AboutMe(){
                 </div>
             </section>
 
-            <section className="section text-center align-items-center" style={{marginBottom: "15rem"}}>
+            <section className="section text-center align-items-center" style={{marginBottom: "11rem"}}>
                 <div className="container">
                 <h1 className="my-5 text-pri">Experiencia de trabajo y educación</h1>
-                    <div className="row">
-                        <div className="col-12 col-md-6 col-lg-4 mb-4">
-                            <div className="d-flex justify-content-start align-items-center mb-3 p-3">
+                    <div className="row ">
+                        <div className="col-12 col-md-6 col-lg-4">
+                            <div className="d-flex justify-content-start align-items-center">
                                 <div className="container card card-color mt-5 border-card" style={{width: "26rem"}}>
-                                    <div className="card-body mt-5 position-relative mb-4">
+                                    <div className="card-body mt-5 position-relative mb-3">
                                         <i className="bi bi-code-slash icon-large"></i>
                                     </div>
-                                    <div className="mt-3">
+                                    <div className="mt-2">
                                         <h3 className="text-white text-center ">UTN</h3>
-                                        <h6 className="text-center text-white mb-5" style={{lineHeight: "1.8"}}>
+                                        <h6 className="text-center text-white mb-3" style={{lineHeight: "1.8"}}>
                                             Estudié la Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional, donde adquirí conocimientos en desarrollo con Python, Java y JavaScript.
                                         </h6>
                                     </div>
@@ -218,14 +225,14 @@ export default function AboutMe(){
                             </div>
                         </div>
                         <div className="col-12 col-md-6 col-lg-4 mb-4">
-                            <div className="d-flex justify-content-start align-items-center mb-3 p-3">
-                                <div className="container card card-color mt-5" style={{width: "26rem"}}>
-                                    <div className="card-body mt-5 position-relative mb-4">
+                            <div className="d-flex justify-content-start align-items-center">
+                                <div className="container card card-color mt-5 border-card" style={{width: "26rem"}}>
+                                    <div className="card-body mt-5 position-relative mb-3">
                                         <i className="bi bi-code-slash icon-large"></i>
                                     </div>
-                                    <div className="mt-3">
+                                    <div className="mt-2">
                                         <h3 className="text-white text-center ">No Country</h3>
-                                        <h6 className="text-center text-white mb-5" style={{lineHeight: "1.8"}}>
+                                        <h6 className="text-center text-white mb-3" style={{lineHeight: "1.8"}}>
                                             Trabajé en equipo en una simulación laboral desarrollando un proyecto frontend con React y Bootstrap, colaborando en la implementación de interfaces dinámicas y funcionales.
                                         </h6>
                                     </div>
@@ -233,14 +240,14 @@ export default function AboutMe(){
                             </div>
                         </div>
                         <div className="col-12 col-md-6 col-lg-4 mb-4">
-                            <div className="d-flex justify-content-start align-items-center mb-3 p-3">
-                                <div className="container card card-color mt-5" style={{width: "26rem"}}>
-                                    <div className="card-body mt-5 position-relative mb-4">
+                            <div className="d-flex justify-content-start align-items-center ">
+                                <div className="container card card-color mt-5 border-card" style={{width: "26rem"}}>
+                                    <div className="card-body mt-5 position-relative mb-3">
                                         <i className="bi bi-code-slash icon-large"></i>
                                     </div>
-                                    <div className="mt-3">
+                                    <div className="mt-2">
                                         <h3 className="text-white text-center ">Freelancer</h3>
-                                        <h6 className="text-center text-white mb-5" style={{lineHeight: "1.8"}}>
+                                        <h6 className="text-center text-white mb-3" style={{lineHeight: "1.8"}}>
                                              Me desempeño como freelancer en el diseño y desarrollo de páginas web, combinando creatividad y funcionalidad para ofrecer soluciones atractivas y eficientes.
                                         </h6>
                                     </div>
