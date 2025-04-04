@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function Me() {
     return (
       <div className="section text-center d-flex justify-content-center align-items-center">
-        <div className="card mb-3 card-color w-100 shadow-XL border-card" style={{ maxWidth: "100%" }}>
+        <div className="card mb-3 card-color w-100 shadow-XL border-card" style={{width: "600px", maxWidth: "100%" }}>
           <div className="row g-0">
             <div className="col-12 col-md-4 p-0 ">
               <img
