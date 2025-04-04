@@ -3,16 +3,15 @@ import { NavLink } from "react-router-dom";
 export default function Me() {
     return (
       <div className="section text-center d-flex justify-content-center align-items-center">
-        <div className="card mb-3 card-color w-100 shadow-XL border-card" style={{ maxWidth: "1300px" }}>
+        <div className="card mb-3 card-color w-100 shadow-XL border-card" style={{ maxWidth: "100%" }}>
           <div className="row g-0">
             <div className="col-12 col-md-4 p-0 ">
-            <img
-                src="/juli.jpg"
-                className="img-fluid img-rounded-left"
-                alt="Acerca de mí"
-                style={{ objectFit: "cover", height: "100%" }}
-            />
-
+              <img
+                  src="/juli.jpg"
+                  className="img-fluid img-rounded-left"
+                  alt="Acerca de mí"
+                  style={{ objectFit: "cover", height: "100%" }}
+              />
             </div>
             <div className="col-12 col-md-8 p-0">
               <div className="card-body">
